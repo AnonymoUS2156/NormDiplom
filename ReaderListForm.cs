@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace NormDiplom
 {
-    public partial class AuthForm : Form
+    public partial class ReaderListForm : Form
     {
-        public AuthForm()
+        public ReaderListForm()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MainArchivistForm ArchForm = new MainArchivistForm();
-            ArchForm.Show();
-            this.Hide();
         }
     }
 }

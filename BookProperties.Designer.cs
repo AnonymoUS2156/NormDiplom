@@ -192,7 +192,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "BookProperties";
-            this.Size = new System.Drawing.Size(585, 425);
+            this.Size = new System.Drawing.Size(604, 447);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

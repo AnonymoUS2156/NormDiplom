@@ -16,7 +16,7 @@ namespace NormDiplom.Models
 
         public int ID { get; set; }
 
-        [StringLength(20)]
+        [StringLength(20)]  
         public string Name { get; set; }
 
         public int? Class { get; set; }
