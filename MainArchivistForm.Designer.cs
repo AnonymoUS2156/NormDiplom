@@ -46,7 +46,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AuthorID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Заголовок = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PublisherID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Year = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Pages = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -83,7 +83,7 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.AuthorID,
-            this.Name,
+            this.Заголовок,
             this.PublisherID,
             this.Year,
             this.Pages,
@@ -221,11 +221,11 @@
             this.AuthorID.HeaderText = "Автор";
             this.AuthorID.Name = "AuthorID";
             // 
-            // Name
+            // Заголовок
             // 
-            this.Name.DataPropertyName = "Name";
-            this.Name.HeaderText = "Заголовок";
-            this.Name.Name = "Name";
+            this.Заголовок.DataPropertyName = "Name";
+            this.Заголовок.HeaderText = "Заголовок";
+            this.Заголовок.Name = "Заголовок";
             // 
             // PublisherID
             // 
@@ -399,7 +399,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn AuthorID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Заголовок;
         private System.Windows.Forms.DataGridViewTextBoxColumn PublisherID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Year;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pages;
