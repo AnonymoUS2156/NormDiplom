@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NormDiplom.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,9 +18,16 @@ namespace NormDiplom
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void Fill(Book book)
         {
-
+            labelBookName.Text = book.Name;
+            labelAuthor.Text = book.AuthorID.ToString();
+            labelPublisher.Text = book.PublisherID.ToString();
+            labelISBN.Text = book.ISBN.ToString();
+            labelDiscipline.Text = book.Disciplines.ToString();
+            labelYear.Text = book.Year.ToString();
+            pictureBox1.Image = Image.FromFile($@"{book.Photo}");
         }
+        
     }
 }

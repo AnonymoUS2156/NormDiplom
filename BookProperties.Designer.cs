@@ -28,171 +28,165 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.buttonBack = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.buttonDelete = new System.Windows.Forms.Button();
-            this.buttonPDF = new System.Windows.Forms.Button();
+            this.sad = new System.Windows.Forms.Label();
+            this.labelBookName = new System.Windows.Forms.Label();
+            this.ISBN = new System.Windows.Forms.Label();
+            this.Заголовок = new System.Windows.Forms.Label();
+            this.labelAuthor = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.labelPublisher = new System.Windows.Forms.Label();
+            this.labelISBN = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelDiscipline = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.labelYear = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // sad
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(33, 26);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(187, 180);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.sad.AutoSize = true;
+            this.sad.Location = new System.Drawing.Point(68, 4);
+            this.sad.Name = "sad";
+            this.sad.Size = new System.Drawing.Size(61, 13);
+            this.sad.TabIndex = 1;
+            this.sad.Text = "Заголовок";
             // 
-            // textBox1
+            // labelBookName
             // 
-            this.textBox1.Location = new System.Drawing.Point(344, 44);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(179, 20);
-            this.textBox1.TabIndex = 1;
+            this.labelBookName.AutoSize = true;
+            this.labelBookName.BackColor = System.Drawing.SystemColors.Control;
+            this.labelBookName.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.labelBookName.Location = new System.Drawing.Point(135, 4);
+            this.labelBookName.Name = "labelBookName";
+            this.labelBookName.Size = new System.Drawing.Size(35, 13);
+            this.labelBookName.TabIndex = 2;
+            this.labelBookName.Text = "пусто";
             // 
-            // textBox2
+            // ISBN
             // 
-            this.textBox2.Location = new System.Drawing.Point(344, 88);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(179, 20);
-            this.textBox2.TabIndex = 2;
+            this.ISBN.AutoSize = true;
+            this.ISBN.Location = new System.Drawing.Point(301, 4);
+            this.ISBN.Name = "ISBN";
+            this.ISBN.Size = new System.Drawing.Size(32, 13);
+            this.ISBN.TabIndex = 3;
+            this.ISBN.Text = "ISBN";
             // 
-            // textBox3
+            // Заголовок
             // 
-            this.textBox3.Location = new System.Drawing.Point(344, 136);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(179, 20);
-            this.textBox3.TabIndex = 3;
+            this.Заголовок.AutoSize = true;
+            this.Заголовок.Location = new System.Drawing.Point(68, 25);
+            this.Заголовок.Name = "Заголовок";
+            this.Заголовок.Size = new System.Drawing.Size(37, 13);
+            this.Заголовок.TabIndex = 3;
+            this.Заголовок.Text = "Автор";
             // 
-            // textBox4
+            // labelAuthor
             // 
-            this.textBox4.Location = new System.Drawing.Point(344, 186);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(179, 20);
-            this.textBox4.TabIndex = 4;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(344, 237);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(179, 21);
-            this.comboBox1.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(266, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Заглавие";
+            this.labelAuthor.AutoSize = true;
+            this.labelAuthor.BackColor = System.Drawing.SystemColors.Control;
+            this.labelAuthor.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.labelAuthor.Location = new System.Drawing.Point(135, 25);
+            this.labelAuthor.Name = "labelAuthor";
+            this.labelAuthor.Size = new System.Drawing.Size(35, 13);
+            this.labelAuthor.TabIndex = 4;
+            this.labelAuthor.Text = "пусто";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(265, 91);
+            this.label2.Location = new System.Drawing.Point(68, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 7;
+            this.label2.TabIndex = 5;
             this.label2.Text = "Издатель";
+            // 
+            // labelPublisher
+            // 
+            this.labelPublisher.AutoSize = true;
+            this.labelPublisher.BackColor = System.Drawing.SystemColors.Control;
+            this.labelPublisher.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.labelPublisher.Location = new System.Drawing.Point(135, 46);
+            this.labelPublisher.Name = "labelPublisher";
+            this.labelPublisher.Size = new System.Drawing.Size(35, 13);
+            this.labelPublisher.TabIndex = 6;
+            this.labelPublisher.Text = "пусто";
+            // 
+            // labelISBN
+            // 
+            this.labelISBN.AutoSize = true;
+            this.labelISBN.Location = new System.Drawing.Point(339, 3);
+            this.labelISBN.Name = "labelISBN";
+            this.labelISBN.Size = new System.Drawing.Size(35, 13);
+            this.labelISBN.TabIndex = 7;
+            this.labelISBN.Text = "пусто";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(298, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Предмет";
+            // 
+            // labelDiscipline
+            // 
+            this.labelDiscipline.AutoSize = true;
+            this.labelDiscipline.Location = new System.Drawing.Point(356, 25);
+            this.labelDiscipline.Name = "labelDiscipline";
+            this.labelDiscipline.Size = new System.Drawing.Size(35, 13);
+            this.labelDiscipline.TabIndex = 9;
+            this.labelDiscipline.Text = "пусто";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(284, 139);
+            this.label3.Location = new System.Drawing.Point(298, 46);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(25, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Год";
+            this.label3.Size = new System.Drawing.Size(76, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Год создания";
             // 
-            // label4
+            // labelYear
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(284, 240);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 13);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Автор";
+            this.labelYear.AutoSize = true;
+            this.labelYear.Location = new System.Drawing.Point(380, 46);
+            this.labelYear.Name = "labelYear";
+            this.labelYear.Size = new System.Drawing.Size(35, 13);
+            this.labelYear.TabIndex = 11;
+            this.labelYear.Text = "пусто";
             // 
-            // comboBox2
+            // pictureBox1
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(344, 290);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(179, 21);
-            this.comboBox2.TabIndex = 10;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(232, 293);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 13);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Отрасль знаний";
-            // 
-            // buttonBack
-            // 
-            this.buttonBack.Location = new System.Drawing.Point(33, 330);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(129, 49);
-            this.buttonBack.TabIndex = 13;
-            this.buttonBack.Text = "Назад";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            // 
-            // buttonDelete
-            // 
-            this.buttonDelete.Location = new System.Drawing.Point(402, 330);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(140, 49);
-            this.buttonDelete.TabIndex = 14;
-            this.buttonDelete.Text = "Удалить";
-            this.buttonDelete.UseVisualStyleBackColor = true;
-            // 
-            // buttonPDF
-            // 
-            this.buttonPDF.Location = new System.Drawing.Point(205, 376);
-            this.buttonPDF.Name = "buttonPDF";
-            this.buttonPDF.Size = new System.Drawing.Size(151, 36);
-            this.buttonPDF.TabIndex = 15;
-            this.buttonPDF.Text = "Преобразовать в PDF";
-            this.buttonPDF.UseVisualStyleBackColor = true;
-            this.buttonPDF.Click += new System.EventHandler(this.button1_Click);
+            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(58, 56);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
             // 
             // BookProperties
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.buttonPDF);
-            this.Controls.Add(this.buttonDelete);
-            this.Controls.Add(this.buttonBack);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.labelYear);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelDiscipline);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelISBN);
+            this.Controls.Add(this.labelPublisher);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelAuthor);
+            this.Controls.Add(this.Заголовок);
+            this.Controls.Add(this.ISBN);
+            this.Controls.Add(this.labelBookName);
+            this.Controls.Add(this.sad);
             this.Name = "BookProperties";
-            this.Size = new System.Drawing.Size(604, 447);
+            this.Size = new System.Drawing.Size(540, 63);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -200,22 +194,19 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button buttonBack;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Button buttonDelete;
-        private System.Windows.Forms.Button buttonPDF;
+        private System.Windows.Forms.Label sad;
+        private System.Windows.Forms.Label labelBookName;
+        private System.Windows.Forms.Label ISBN;
+        private System.Windows.Forms.Label Заголовок;
+        private System.Windows.Forms.Label labelAuthor;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelPublisher;
+        private System.Windows.Forms.Label labelISBN;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelDiscipline;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelYear;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

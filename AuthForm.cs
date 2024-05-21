@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NormDiplom.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,12 +17,16 @@ namespace NormDiplom
         {
             InitializeComponent();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            MainArchivistForm ArchForm = new MainArchivistForm();
-            ArchForm.Show();
             this.Hide();
+            MainArchivistForm mainArchivistForm = new MainArchivistForm();
+            mainArchivistForm.Show();
+        }
+
+        private void textBoxLogin_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -16,5 +16,31 @@ namespace NormDiplom
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ReaderListForm_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "employeeData.Employee". При необходимости она может быть перемещена или удалена.
+            this.employeeTableAdapter.Fill(this.employeeData.Employee);
+
+        }
     }
 }
