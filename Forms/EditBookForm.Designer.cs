@@ -40,12 +40,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxPrice = new System.Windows.Forms.TextBox();
+            this.textBoxYear = new System.Windows.Forms.TextBox();
+            this.textBoxPublisher = new System.Windows.Forms.TextBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBoxISBN = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -156,33 +158,33 @@
             this.comboBox1.Size = new System.Drawing.Size(179, 21);
             this.comboBox1.TabIndex = 40;
             // 
-            // textBox4
+            // textBoxPrice
             // 
-            this.textBox4.Location = new System.Drawing.Point(354, 193);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(179, 20);
-            this.textBox4.TabIndex = 39;
+            this.textBoxPrice.Location = new System.Drawing.Point(354, 193);
+            this.textBoxPrice.Name = "textBoxPrice";
+            this.textBoxPrice.Size = new System.Drawing.Size(179, 20);
+            this.textBoxPrice.TabIndex = 39;
             // 
-            // textBox3
+            // textBoxYear
             // 
-            this.textBox3.Location = new System.Drawing.Point(354, 143);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(179, 20);
-            this.textBox3.TabIndex = 38;
+            this.textBoxYear.Location = new System.Drawing.Point(354, 143);
+            this.textBoxYear.Name = "textBoxYear";
+            this.textBoxYear.Size = new System.Drawing.Size(179, 20);
+            this.textBoxYear.TabIndex = 38;
             // 
-            // textBox2
+            // textBoxPublisher
             // 
-            this.textBox2.Location = new System.Drawing.Point(354, 95);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(179, 20);
-            this.textBox2.TabIndex = 37;
+            this.textBoxPublisher.Location = new System.Drawing.Point(354, 95);
+            this.textBoxPublisher.Name = "textBoxPublisher";
+            this.textBoxPublisher.Size = new System.Drawing.Size(179, 20);
+            this.textBoxPublisher.TabIndex = 37;
             // 
-            // textBox1
+            // textBoxName
             // 
-            this.textBox1.Location = new System.Drawing.Point(354, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(179, 20);
-            this.textBox1.TabIndex = 36;
+            this.textBoxName.Location = new System.Drawing.Point(354, 51);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(179, 20);
+            this.textBoxName.TabIndex = 36;
             // 
             // pictureBox1
             // 
@@ -194,11 +196,29 @@
             this.pictureBox1.TabIndex = 35;
             this.pictureBox1.TabStop = false;
             // 
+            // textBoxISBN
+            // 
+            this.textBoxISBN.Location = new System.Drawing.Point(12, 200);
+            this.textBoxISBN.Name = "textBoxISBN";
+            this.textBoxISBN.Size = new System.Drawing.Size(187, 20);
+            this.textBoxISBN.TabIndex = 52;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(86, 223);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(32, 13);
+            this.label7.TabIndex = 53;
+            this.label7.Text = "ISBN";
+            // 
             // EditBookForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 498);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.textBoxISBN);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.buttonPDF);
             this.Controls.Add(this.buttonDelete);
@@ -211,10 +231,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxPrice);
+            this.Controls.Add(this.textBoxYear);
+            this.Controls.Add(this.textBoxPublisher);
+            this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.pictureBox1);
             this.Name = "EditBookForm";
             this.Text = "EditBookForm";
@@ -238,11 +258,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxPrice;
+        private System.Windows.Forms.TextBox textBoxYear;
+        private System.Windows.Forms.TextBox textBoxPublisher;
+        private System.Windows.Forms.TextBox textBoxName;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBoxISBN;
+        private System.Windows.Forms.Label label7;
     }
 }

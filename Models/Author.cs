@@ -28,6 +28,9 @@ namespace NormDiplom.Models
 
         public int? Gender { get; set; }
 
+        [StringLength(50)]
+        public string Abbreviation { get; set; }
+
         [Column(TypeName = "date")]
         public DateTime? Birthday { get; set; }
 

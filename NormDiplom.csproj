@@ -55,10 +55,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddBookForm.cs">
+    <Compile Include="Forms\AddBookForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddBookForm.Designer.cs">
+    <Compile Include="Forms\AddBookForm.Designer.cs">
       <DependentUpon>AddBookForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ArchiveDataSet.Designer.cs">
@@ -66,10 +66,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ArchiveDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="AuthForm.cs">
+    <Compile Include="Forms\AuthForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AuthForm.Designer.cs">
+    <Compile Include="Forms\AuthForm.Designer.cs">
       <DependentUpon>AuthForm.cs</DependentUpon>
     </Compile>
     <Compile Include="BookProperties.cs">
@@ -78,10 +78,10 @@
     <Compile Include="BookProperties.Designer.cs">
       <DependentUpon>BookProperties.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditBookForm.cs">
+    <Compile Include="Forms\EditBookForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditBookForm.Designer.cs">
+    <Compile Include="Forms\EditBookForm.Designer.cs">
       <DependentUpon>EditBookForm.cs</DependentUpon>
     </Compile>
     <Compile Include="EmployeeData.Designer.cs">
@@ -89,10 +89,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EmployeeData.xsd</DependentUpon>
     </Compile>
-    <Compile Include="MainArchivistForm.cs">
+    <Compile Include="Forms\MainArchivistForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainArchivistForm.Designer.cs">
+    <Compile Include="Forms\MainArchivistForm.Designer.cs">
       <DependentUpon>MainArchivistForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Author.cs" />
@@ -120,25 +120,25 @@
     <Compile Include="Models\Publisher.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReaderListForm.cs">
+    <Compile Include="Forms\ReaderListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReaderListForm.Designer.cs">
+    <Compile Include="Forms\ReaderListForm.Designer.cs">
       <DependentUpon>ReaderListForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddBookForm.resx">
+    <EmbeddedResource Include="Forms\AddBookForm.resx">
       <DependentUpon>AddBookForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AuthForm.resx">
+    <EmbeddedResource Include="Forms\AuthForm.resx">
       <DependentUpon>AuthForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BookProperties.resx">
       <DependentUpon>BookProperties.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditBookForm.resx">
+    <EmbeddedResource Include="Forms\EditBookForm.resx">
       <DependentUpon>EditBookForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainArchivistForm.resx">
+    <EmbeddedResource Include="Forms\MainArchivistForm.resx">
       <DependentUpon>MainArchivistForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -150,7 +150,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ReaderListForm.resx">
+    <EmbeddedResource Include="Forms\ReaderListForm.resx">
       <DependentUpon>ReaderListForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ArchiveDataSet.xsc">
@@ -211,6 +211,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

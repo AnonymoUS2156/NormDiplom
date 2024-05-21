@@ -38,25 +38,15 @@
             this.button3 = new System.Windows.Forms.Button();
             this.archiveDataSet = new NormDiplom.ArchiveDataSet();
             this.employeeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.surnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.secondNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.departmentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reservedBookIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.employeeData = new NormDiplom.EmployeeData();
             this.employeeBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.employeeData = new NormDiplom.EmployeeData();
             this.employeeTableAdapter = new NormDiplom.EmployeeDataTableAdapters.EmployeeTableAdapter();
             this.employeeBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.archiveDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -133,84 +123,15 @@
             this.employeeBindingSource1.DataMember = "Employee";
             this.employeeBindingSource1.DataSource = this.archiveDataSet;
             // 
-            // dataGridView1
+            // employeeBindingSource3
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn,
-            this.nameDataGridViewTextBoxColumn,
-            this.surnameDataGridViewTextBoxColumn,
-            this.secondNameDataGridViewTextBoxColumn,
-            this.phoneDataGridViewTextBoxColumn,
-            this.departmentDataGridViewTextBoxColumn,
-            this.emailDataGridViewTextBoxColumn,
-            this.reservedBookIDDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.employeeBindingSource3;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(548, 415);
-            this.dataGridView1.TabIndex = 18;
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Имя";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            // 
-            // surnameDataGridViewTextBoxColumn
-            // 
-            this.surnameDataGridViewTextBoxColumn.DataPropertyName = "Surname";
-            this.surnameDataGridViewTextBoxColumn.HeaderText = "Фамилия";
-            this.surnameDataGridViewTextBoxColumn.Name = "surnameDataGridViewTextBoxColumn";
-            // 
-            // secondNameDataGridViewTextBoxColumn
-            // 
-            this.secondNameDataGridViewTextBoxColumn.DataPropertyName = "SecondName";
-            this.secondNameDataGridViewTextBoxColumn.HeaderText = "Отчество";
-            this.secondNameDataGridViewTextBoxColumn.Name = "secondNameDataGridViewTextBoxColumn";
-            // 
-            // phoneDataGridViewTextBoxColumn
-            // 
-            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
-            this.phoneDataGridViewTextBoxColumn.HeaderText = "Телефон";
-            this.phoneDataGridViewTextBoxColumn.MaxInputLength = 11;
-            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
-            // 
-            // departmentDataGridViewTextBoxColumn
-            // 
-            this.departmentDataGridViewTextBoxColumn.DataPropertyName = "Department";
-            this.departmentDataGridViewTextBoxColumn.HeaderText = "Отдел";
-            this.departmentDataGridViewTextBoxColumn.Name = "departmentDataGridViewTextBoxColumn";
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            // 
-            // reservedBookIDDataGridViewTextBoxColumn
-            // 
-            this.reservedBookIDDataGridViewTextBoxColumn.DataPropertyName = "ReservedBookID";
-            this.reservedBookIDDataGridViewTextBoxColumn.HeaderText = "Зарезервированные книги";
-            this.reservedBookIDDataGridViewTextBoxColumn.Name = "reservedBookIDDataGridViewTextBoxColumn";
+            this.employeeBindingSource3.DataMember = "Employee";
+            this.employeeBindingSource3.DataSource = this.employeeData;
             // 
             // employeeData
             // 
             this.employeeData.DataSetName = "EmployeeData";
             this.employeeData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // employeeBindingSource3
-            // 
-            this.employeeBindingSource3.DataMember = "Employee";
-            this.employeeBindingSource3.DataSource = this.employeeData;
             // 
             // employeeTableAdapter
             // 
@@ -229,7 +150,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox2);
@@ -241,9 +161,8 @@
             this.Load += new System.EventHandler(this.ReaderListForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.archiveDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -262,15 +181,6 @@
         private System.Windows.Forms.Button button3;
         private ArchiveDataSet archiveDataSet;
         private System.Windows.Forms.BindingSource employeeBindingSource1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn surnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn secondNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn departmentDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn reservedBookIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource employeeBindingSource2;
         private EmployeeData employeeData;
         private System.Windows.Forms.BindingSource employeeBindingSource3;

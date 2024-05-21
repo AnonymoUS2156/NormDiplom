@@ -21,13 +21,18 @@ namespace NormDiplom
         public void Fill(Book book)
         {
             labelBookName.Text = book.Name;
-            labelAuthor.Text = book.AuthorID.ToString();
-            labelPublisher.Text = book.PublisherID.ToString();
+            labelAuthor.Text = book.Author.Abbreviation.ToString();
+            labelPublisher.Text = book.Publisher.Name.ToString();
             labelISBN.Text = book.ISBN.ToString();
             labelDiscipline.Text = book.Disciplines.ToString();
             labelYear.Text = book.Year.ToString();
             pictureBox1.Image = Image.FromFile($@"{book.Photo}");
         }
-        
+
+        private void buttonFeatures_Click(object sender, EventArgs e)
+        {
+            EditBookForm ebForm = new EditBookForm();
+            ebForm.Show();
+        }
     }
 }
